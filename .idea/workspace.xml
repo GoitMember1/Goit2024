@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb3795dc-ba17-4f73-bcdc-1da90b8eaa1b" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkModule12/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkModule12/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkModule13/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,25 +32,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainM10.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainM10_2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WordFrequencyCounter.executor&quot;: &quot;Run&quot;,
-    &quot;Application.homeworkModule12.Task1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainM10.executor": "Run",
+    "Application.MainM10_2.executor": "Run",
+    "Application.Project.executor": "Run",
+    "Application.Task1.executor": "Run",
+    "Application.Task2.executor": "Run",
+    "Application.Task3.executor": "Run",
+    "Application.Task4.executor": "Run",
+    "Application.Task5.executor": "Run",
+    "Application.WordFrequencyCounter.executor": "Run",
+    "Application.homeworkModule12.Task1.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
-  <component name="RunManager" selected="Application.Task2">
+}]]></component>
+  <component name="RunManager" selected="Application.Project">
+    <configuration name="Project" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkModule13.Project" />
+      <module name="Goit2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworkModule13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkModule11.Task1" />
       <module name="Goit2024" />
@@ -71,19 +85,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeworkModule12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworkModule11.Task4" />
-      <module name="Goit2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworkModule11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Project" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.homeworkModule12.Task1" />
         <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Task5" />
-        <item itemvalue="Application.Task4" />
       </list>
     </recent_temporary>
   </component>
@@ -183,8 +184,27 @@
       <option name="project" value="LOCAL" />
       <updated>1708617059509</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1709142125694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709142125694</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
