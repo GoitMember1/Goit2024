@@ -1,5 +1,4 @@
 package homeworkModule13;
-
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -56,6 +55,23 @@ public class Project {
         return latestPostId;
     }
 
+    private static String filterIncompleteTodos(String todosJson) {
+        StringBuilder filteredJson = new StringBuilder("[");
+        String[] todos = todosJson.split("\\},\\{");
+        boolean firstTodo = true;
+        for (String todo : todos) {
+            if (todo.contains("\"completed\": false")) {
+                if (!firstTodo) {
+                    filteredJson.append(",");
+                }
+                filteredJson.append("{").append(todo).append("}");
+                firstTodo = false;
+            }
+        }
+        filteredJson.append("]");
+        return filteredJson.toString();
+    }
+
     public static void main(String[] args) {
         try {
             String newUserJson = sendHttpRequest("/users", "POST", "{ \"name\": \"John Doe\", \"username\": \"johndoe\", \"email\": \"johndoe@example.com\" }");
@@ -72,8 +88,8 @@ public class Project {
                 System.out.println("Failed to delete user with id " + deletedUserId + ". Response code: " + responseCode);
             }
 
-            String allUsersJson = sendHttpRequest("/users", "GET", null);
-            System.out.println("All Users:\n" + allUsersJson);
+            String allJson = sendHttpRequest("/users", "GET", null);
+            System.out.println("All Users:\n");
 
             int userIdToRetrieve = 3;
             String userByIdJson = sendHttpRequest("/users/" + userIdToRetrieve, "GET", null);
@@ -95,6 +111,9 @@ public class Project {
             String todosEndpoint = "/users/" + userIdForTodos + "/todos";
             String todosJson = sendHttpRequest(todosEndpoint, "GET", null);
             System.out.println("Open Todos for user " + userIdForTodos + ":\n" + todosJson);
+
+            String incompleteTodosJson = filterIncompleteTodos(todosJson);
+            System.out.println("Incomplete Todos for user " + userIdForTodos + ":\n" + incompleteTodosJson);
 
         } catch (IOException e) {
             e.printStackTrace();
